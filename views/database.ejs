@@ -1,0 +1,26 @@
+ <!-- htmlhint spec-char-escape:false -->
+<!--
+
+This is a 'complex' view.
+-->
+
+<!DOCTYPE html>
+
+<html>
+  
+<body>
+  
+  <% for ( var i = 0; i < messages.length; i++ ) { %>
+    
+    <p><%= messages[i] %></p>
+  
+  <% } %>
+  
+  <form method="POST">
+    <input name="message">
+    <input type="submit">
+  </form>
+	
+</body>
+
+</html>
